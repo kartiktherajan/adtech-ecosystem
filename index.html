@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdTech Ecosystem Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AdTech Ecosystem Visualization</h1>
+        
+        <!-- Main visualization container -->
+        <div id="adtech-visualization">
+            <!-- Will be populated by JavaScript -->
+        </div>
+        
+        <!-- Workflow controls -->
+        <div class="workflow-controls">
+            <h3>View Workflows</h3>
+            <button id="btn-standard-flow" class="workflow-btn">Standard RTB Flow</button>
+            <button id="btn-header-bidding" class="workflow-btn">Header Bidding</button>
+            <button id="btn-waterfall" class="workflow-btn">Waterfall Strategy</button>
+            <button id="btn-reset" class="workflow-btn">Reset View</button>
+        </div>
+        
+        <!-- Component details panel (hidden by default) -->
+        <div id="component-details" class="panel hidden">
+            <div class="panel-header">
+                <h3 id="component-title">Component Details</h3>
+                <button id="close-details" class="close-btn">×</button>
+            </div>
+            <div id="component-content" class="panel-content"></div>
+        </div>
+        
+        <!-- Metrics panel -->
+        <div class="metrics-panel">
+            <h3>AdTech Key Metrics</h3>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h4>Impression Rate</h4>
+                    <div class="metric-value">~60%</div>
+                    <div class="metric-desc">Percentage of ads successfully served</div>
+                </div>
+                <div class="metric-card">
+                    <h4>Fill rate</h4>
+                    <div class="metric-value">10-80%</div>
+                    <div class="metric-desc">Success rate across channels</div>
+                </div>
+                <div class="metric-card">
+                    <h4>Pricing Models</h4>
+                    <div class="metric-value">CPM, CPC, CPI</div>
+                    <div class="metric-desc">Common billing models</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Workflow visualization overlay (hidden by default) -->
+        <div id="workflow-overlay" class="hidden">
+            <div class="overlay-content">
+                <h3 id="workflow-title">Workflow</h3>
+                <div id="workflow-steps"></div>
+                <button id="close-workflow" class="close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src=".\adtech-ecosystem.js"></script>
+</body>
+</html>
